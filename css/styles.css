@@ -1,8 +1,30 @@
   body {
-    background-color: #ffffff;
     margin: 0;
   }
 
+  h1 {
+    padding-top: 10%;
+    font-family: "Indie Flower";
+    font-size: 8rem;
+    text-align: center;
+    color: #3bb4c1;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+      text-align: center;
+    color: #3bb4c1;
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    line-height: 2;
+    text-align: justify;
+  }
+
+/* Navigation */
   nav {
     overflow: hidden;
     background-color: #434242;
@@ -12,7 +34,9 @@
   }
 
   nav a:hover {
-    color: maroon;
+    color: #3bb4c1;
+    text-decoration: none;
+
   }
 
   ul {
@@ -33,92 +57,63 @@
     color: white;
   }
 
+/* About */
+#about {
+  background-color: #ffffff;
+
+}
   .me {
-    width: 35%;
+    width: 50%;
     float: left;
-    padding-left: 110px;
-  }
-
-  h1 {
-    padding-top: 60px;
-    font-family: "Indie Flower";
-    font-size: 8rem;
-    text-align: center;
-    color: #3bb4c1;
-  }
-
-  h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 28px;
-    text-align: center;
-    color: #3bb4c1;
-  }
-
-  h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    color: #3bb4c1;
+    padding: 5% 5% 7% 15%;
   }
 
   .body {
-    padding-left: 800px;
-    padding-right: 130px;
-    padding-bottom: 170px;
-    width: 35%;
-  }
-
-  p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 2;
-  }
-
-  .projects {
-    padding-top: 10px;
-  }
-
-  hr {
-    width: 35%;
-    padding-right: 250px;
-    padding-left: 90px;
+    padding: 5% 15% 5% 5%;
     float: right;
+    width: 50%;
   }
 
-  #icons {
-    padding: 7% 15%;
-  }
-
-  .feature-box {
-    margin-left: auto;
+/* Skills */
+  #skills {
     text-align: center;
-    padding: 2%;
-    padding-left: 110px;
-    display: inline-block;
-  }
+    padding: 45% 15% 10% 15%;
+    background-color: #f6f5f5;
+    }
 
-  .icon {
-    color: black;
-  }
+.col {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 2;
+  text-align: left;
+align: center;
+padding-left: 160px;
+}
 
-  .icon:hover {
-    color: #3bb4c1;
-  }
+#github {
+  text-decoration: none;
+color: black;
+}
 
+#github:hover {
+  color: #3bb4c1;
+
+}
+/* Portfolio */
   #portfolio {
     text-align: center;
-    padding-top: 100px;
-    background-color: #f6f5f5;
+    background-color: #ffffff;
     right: 0;
+    padding: 7% 10% 0% 10%;
+
   }
 
   .project {
     display: inline-block;
     overflow: hidden;
-    height: 230px;
-    width: 350px;
-    margin: 40px 30px;
-    padding-left 8px;
+    height: 290px;
+    width: 410px;
+    margin: 40px 80px 40px 80px;
   }
 
   .project:hover {
@@ -128,15 +123,18 @@
   .project-pic {
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px;
     padding-left: 1px;
   }
 
+/* Form */
   form {
     width: 900px;
     display: inline-block;
     border-radius: 5px;
-    background-color: #f6f5f5;
+    background-color: #d0c8c8
+
+;
     padding: 20px;
   }
 
@@ -144,7 +142,7 @@
     text-align: center;
     padding-top: 80px;
     padding-bottom: 50px;
-    background-color: white;
+    background-color: #f6f5f5;
   }
 
   input[type="text"],
@@ -198,12 +196,14 @@
   }
 
   #submit:hover {
-    background-color: maroon;
+    background-color: #434242;
     color: white;
   }
 
   .gmail {
     text-align: center;
+    font-size: 1rem;
+
   }
 
   footer {
