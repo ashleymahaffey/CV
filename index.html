@@ -4,51 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>Ashley Mahaffey's Website</title>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/b79994da32.js"></script>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!-- Images -->
   <link rel="icon" href="sneakycat.png">
 </head>
 
+<!-- Navigation -->
 <body>
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   </div>
-  <h1 id="about">Ashley Mahaffey</h1>
-  <img class="me" src="https://drive.google.com/uc?id=1RrT3vmt9JJdsuBbX12KF2THazUyJxCdQ">
 
-  <div class="body">
-    <h2>Hi, I'm Ashley.</h2>
+  <!-- About -->
 
-    <p>I'm a Front-End Web Developer with a passion for improving the world by making innovative ideas come to life. My expertise includes JavaScript, HTML, and CSS.</p>
-    <p>Let's work together!</p>
-    <h2 class="projects">Projects</h2>
-    <hr>
+  <div id="about">
 
-    <div class="icons" <div class="row">
+<h1>Ashley Mahaffey</h1>
+  <img id="about" class="me" src="https://drive.google.com/uc?id=1RrT3vmt9JJdsuBbX12KF2THazUyJxCdQ">
+<div id="about" class="body">
+      <h2>Hi, I'm Ashley.</h2>
 
-      <div class="feature-box col-lg-2">
-        <a href="https://github.com/ashleymahaffey" target="_blank"> <i class="icon fab fa-github fa-5x"></i></a>
-      </div>
-
-      <div class="feature-box col-lg-2">
-        <a href="https://codepen.io/ashleymahaffey/" target="_blank"> <i class="icon fab fa-codepen fa-5x"></i></a>
-      </div>
-    </div>
+    <p>I'm a Front-End Web Developer with a passion for improving the world by making innovative ideas come to life.</p>
   </div>
-  </div>
+</div>
 
-  <div id="portfolio">
-    <h3>Portfolio</h3>
-    <div class="title">
+  <!-- Skills -->
+  <div id="skills">
+    <h2>Skills</h2>
+    <div class="container">
+  <div class="row">
+    <div class="col"><i class="fab fa-js-square"></i> Javascript</div>
+    <div class="col"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+    <div class="w-100"></div>
+    <div class="col"><i class="fas fa-code"></i> HTML</div>
+    <div class="col"><i class="fab fa-css3"></i> CSS</div>
+    <div class="w-100"></div>
+  <div class="col">  <a href="https://github.com/ashleymahaffey" id="github" target="_blank"><i class="fab fa-github"></i>  Github</div></a>
+    <div class="col"><i class="far fa-file-code"></i> JSON</div>
+  </div>
+</div>
+</div>
+  </div>
+  <!-- Portfolio -->
+  <div id="portfolio" class="title">
+    <h2>Portfolio</h2>
 
       <a href="https://ashleymahaffey.github.io/MBTinder/" id=profile-link target="_blank" class="project project-tile">
         <img class="project-pic" src="images/MBTinderPortfolio.png" border="0" alt="MBTinder">
@@ -68,9 +91,10 @@
       <a href="#" id=profile-link target="_blank" class="project project-tile">
         <img class="project-pic" src="https://i.ytimg.com/vi/VymuQC0o7yQ/maxresdefault.jpg" border="0" alt="Space">
       </a>
-
+</div></div>
+<!-- Form -->
       <div id="contact">
-        <h3>Let's work together!</h3>
+        <h2>Let's work together!</h2>
         <p class="gmail"><i class="far fa-envelope"> ashley.d.mahaffey@gmail.com</i></p>
         <form>
           <label for="name">*Enter your name:</label>
@@ -90,26 +114,7 @@
 </html>
 
 <script>
-  function myFunction() {
-    alert("Talk soon!");
-  }
-
-  // Submit form with id function.
-  function submit_by_id() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    if (validation()) {
-      // Calling validation function
-      document.getElementById("form_id").submit(); //form submission
-      alert(
-        " Name : " +
-        name +
-        " n Email : " +
-        email +
-        " n Form Id : " +
-        document.getElementById("form_id").getAttribute("id") +
-        "nn Form Submitted Successfully......"
-      );
-    }
-  }
+function myFunction() {
+  alert("Talk soon!");
+}
 </script>
