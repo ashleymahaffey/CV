@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
   <title>Ashley Mahaffey's Website</title>
 
-  <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <!-- CSS Style Sheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,61 +17,98 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/b79994da32.js"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- Images -->
+  <!-- Images -->
   <link rel="icon" href="sneakycat.png">
 </head>
 
-<!-- Navigation -->
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+    </div>
   </nav>
 
-  </div>
-
   <!-- About -->
+  <section class="colored-section" id="about">
+    <div class="container-fluid">
 
-  <div id="about">
+      <h1>Ashley Mahaffey</h1>
 
-<h1>Ashley Mahaffey</h1>
-  <img id="about" class="me" src="https://drive.google.com/uc?id=1RrT3vmt9JJdsuBbX12KF2THazUyJxCdQ">
-<div id="about" class="body">
-      <h2>Hi, I'm Ashley.</h2>
+      <div class="row">
 
-    <p>I'm a Front-End Web Developer with a passion for improving the world by making innovative ideas come to life.</p>
-  </div>
-</div>
+        <div class="col-lg-6">
+          <img class="me" src="https://drive.google.com/uc?id=1RrT3vmt9JJdsuBbX12KF2THazUyJxCdQ" alt="Ashley Mahaffey">
+        </div>
+
+        <div class="col-lg-6">
+          <h2>Hi, I'm Ashley.</h2>
+          <p>I'm a Front-End Web Developer with a passion for improving the world by making innovative ideas come to life.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
 
   <!-- Skills -->
-  <div id="skills">
-    <h2>Skills</h2>
-    <div class="container">
-  <div class="row">
-    <div class="col"><i class="fab fa-js-square"></i> Javascript</div>
-    <div class="col"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-    <div class="w-100"></div>
-    <div class="col"><i class="fas fa-code"></i> HTML</div>
-    <div class="col"><i class="fab fa-css3"></i> CSS</div>
-    <div class="w-100"></div>
-  <div class="col">  <a href="https://github.com/ashleymahaffey" id="github" target="_blank"><i class="fab fa-github"></i>  Github</div></a>
-    <div class="col"><i class="far fa-file-code"></i> JSON</div>
-  </div>
-</div>
-</div>
-  </div>
+
+  <section class="skills" class="white-section" id="skills">
+    <div class="container-fluid">
+
+      <h2>Skills</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col"><i class="fab fa-js-square"></i> Javascript</div>
+          <div class="col"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+          <div class="w-100"></div>
+          <div class="col"><i class="fas fa-code"></i> HTML</div>
+          <div class="col"><i class="fab fa-css3"></i> CSS</div>
+          <div class="w-100"></div>
+          <div class="col"> <a href="https://github.com/ashleymahaffey" id="github" target="_blank"><i class="fab fa-github"></i> Github</div></a>
+          <div class="col"><i class="far fa-file-code"></i> JSON</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
   <!-- Portfolio -->
-  <div id="portfolio" class="title">
-    <h2>Portfolio</h2>
+
+  <section class="colored-section">
+
+    <div id="portfolio" class="title">
+      <h2>Portfolio</h2>
 
       <a href="https://ashleymahaffey.github.io/MBTinder/" id=profile-link target="_blank" class="project project-tile">
         <img class="project-pic" src="images/MBTinderPortfolio.png" border="0" alt="MBTinder">
@@ -91,30 +128,47 @@
       <a href="#" id=profile-link target="_blank" class="project project-tile">
         <img class="project-pic" src="https://i.ytimg.com/vi/VymuQC0o7yQ/maxresdefault.jpg" border="0" alt="Space">
       </a>
-</div></div>
-<!-- Form -->
-      <div id="contact">
-        <h2>Let's work together!</h2>
-        <p class="gmail"><i class="far fa-envelope"> ashley.d.mahaffey@gmail.com</i></p>
-        <form>
-          <label for="name">*Enter your name:</label>
-          <input type="text" id="name">
-          <label for="email">*Enter your email:</label>
-          <input type="email" id="email">
-          <label for="number">Enter your phone number:</label>
-          <input type="number" id="number">
-          <label for="message">*Enter your message:</label></p>
-          <textarea id="message" name="message" style="height:200px"></textarea>
-          <input onclick="myFunction()" type="submit" id="submit" value="Submit">
-      </div>
-      </form>
-      <footer>Copyright 2019 Ashley Mahaffey</footer>
+    </div>
+
+  </section>
+
+  <!-- Form -->
+  <section class="white-section">
+
+    <div id="contact">
+      <h2>Let's work together!</h2>
+      <p class="gmail"><i class="far fa-envelope"> ashley.d.mahaffey@gmail.com</i></p>
+      <form>
+        <label for="name">*Enter your name:</label>
+        <input type="text" id="name">
+        <label for="email">*Enter your email:</label>
+        <input type="email" id="email">
+        <label for="number">Enter your phone number:</label>
+        <input type="number" id="number">
+        <label for="message">*Enter your message:</label></p>
+        <textarea id="message" name="message" style="height:200px"></textarea>
+        <input onclick="myFunction()" type="submit" id="submit" value="Submit">
+    </div>
+    </form>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <footer>Copyright 2019 Ashley Mahaffey</footer>
+
+  </footer>
+
+
 </body>
 
 </html>
 
 <script>
-function myFunction() {
-  alert("Talk soon!");
-}
+  function myFunction() {
+    alert("Talk soon!");
+  }
 </script>
