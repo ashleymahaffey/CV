@@ -1,222 +1,201 @@
-  <style>
 body {
-    margin: 0;
-  }
+  text-align: center;
+}
 
-  h1 {
-    padding-top: 10%;
-    font-family: "Indie Flower";
-    font-size: 8rem;
-    text-align: center;
-    color: #3bb4c1;
-  }
+h1 {
+  padding-bottom: 10%;
+  font-family: "Indie Flower";
+  font-size: 8rem;
+  color: #3bb4c1;
+}
 
-  h2 {
-    font-family: "Poppins", sans-serif;
+h2 {
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
-      text-align: center;
-    color: #3bb4c1;
-  }
+  color: #3bb4c1;
+}
 
-  p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
-    line-height: 2;
-    text-align: justify;
-  }
+p, label, footer {
+  font-family: "Open Sans", sans-serif;
+}
 
-/* Navigation */
-  nav {
-    overflow: hidden;
-    background-color: #434242;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+p {
+  font-size: 2rem;
+  line-height: 2;
+  text-align: justify;
+}
 
-  nav a:hover {
-    color: #3bb4c1;
-    text-decoration: none;
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
 
-  }
+/* Sections */
+.colored-section {
+  background-color: #f6f5f5;
+}
 
-  ul {
-    list-style: none;
-    float: right;
-    padding: 10px;
-    padding-top: 10px;
-    margin-right: 170px;
-  }
+.white-section {
+  background-color: #fff;
+}
 
-  li {
-    display: inline;
-    margin-left: 50px;
-  }
+/* Navigation Bar */
+.navbar {
+  background-color: #434242;
+  padding: 0 0 0 4.5rem;
+  padding: 1% 15% 1%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
-  li a {
-    text-decoration: none;
-    color: white;
-  }
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-link a:hover {
+  color: #3bb4c1;
+  text-decoration: none;
+}
+
+/* Portfolio */
+#portfolio {
+  right: 0;
+  padding: 7% 10% 0% 10%;
+}
+
+.project {
+  display: inline-block;
+  overflow: hidden;
+  height: 290px;
+  width: 410px;
+  margin: 40px 80px 40px 80px;
+}
+
+.project:hover {
+  opacity: 0.3;
+}
+
+.project-pic {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px;
+  padding-left: 1px;
+}
 
 /* About */
-#about {
-  background-color: #ffffff;
-
+.me {
+  width: 90%;
+  position: absolute;
+  right: 10%;
 }
-  .me {
-    width: 50%;
-    float: left;
-    padding: 5% 5% 7% 15%;
-  }
-
-  .body {
-    padding: 5% 15% 5% 5%;
-    float: right;
-    width: 50%;
-  }
 
 /* Skills */
-  #skills {
-    text-align: center;
-    padding: 45% 15% 10% 15%;
-    background-color: #f6f5f5;
-    }
-
 .col {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   line-height: 2;
   text-align: left;
-align: center;
-padding-left: 160px;
+  align: center;
+  padding-left: 160px;
 }
 
 #github {
   text-decoration: none;
-color: black;
+  color: black;
 }
 
 #github:hover {
   color: #3bb4c1;
-
 }
-/* Portfolio */
-  #portfolio {
-    text-align: center;
-    background-color: #ffffff;
-    right: 0;
-    padding: 7% 10% 0% 10%;
-
-  }
-
-  .project {
-    display: inline-block;
-    overflow: hidden;
-    height: 290px;
-    width: 410px;
-    margin: 40px 80px 40px 80px;
-  }
-
-  .project:hover {
-    opacity: 0.3;
-  }
-
-  .project-pic {
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px;
-    padding-left: 1px;
-  }
 
 /* Form */
-  form {
-    width: 900px;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #d0c8c8
+form {
+  width: 900px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f6f5f5;
+  padding: 20px;
+}
 
-;
-    padding: 20px;
-  }
+#contact {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
 
-  #contact {
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #3bb4c1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #434242;
+  color: white;
+}
+
+.gmail {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Footer Section */
+footer {
+  background-color: #434242;
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 1028px) {
+  p {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    background-color: #f6f5f5;
   }
 
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  .me {
+    position: static;
   }
-
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  input[type="number"],
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  label {
-    font-family: "Open Sans", sans-serif;
-  }
-
-  input[type="submit"] {
-    background-color: #3bb4c1;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-  }
-
-  #submit:hover {
-    background-color: #434242;
-    color: white;
-  }
-
-  .gmail {
-    text-align: center;
-    font-size: 1rem;
-
-  }
-
-  footer {
-    background-color: #434242;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-  }
-</style>
+}
